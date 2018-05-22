@@ -18,7 +18,8 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  spec.add_dependency "aws-sdk",   "~> 2"
+  spec.add_dependency  'aws-sdk-cloudwatch', '~> 1'
+spec.add_dependency 'aws-sdk-cloudwatchlogs', '~> 1'
   spec.add_dependency "rails",     ">= 4.2.0"
   spec.add_dependency "shoryuken", ">= 2.0"
 
